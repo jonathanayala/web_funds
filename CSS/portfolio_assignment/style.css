@@ -1,0 +1,180 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+    width: 785px;
+    height: 900px;
+    margin: 0px auto;
+}
+
+.header{
+    width: 780px;
+    height: 40px;
+    margin: 0px auto;
+    padding-top: 5px;
+    background-color: whitesmoke;
+}
+
+.header h1{
+    display: inline-block;
+    width: 265px;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+
+.header h2{
+    display: inline-block;
+    width: 450px;
+    font-size: 14px;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: right;
+    vertical-align: super;
+}
+
+.main{
+    background: radial-gradient(rgb(158, 123, 184),rgb(50, 10, 63));
+    width: 700px;
+    height: 600px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+#mypic{
+    width: 300px;
+    height: 197px;
+    background-color: rgb(223, 205, 223);
+    padding: 5px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#about{
+    width: 370px;
+    height: 207px;
+    background-color: whitesmoke;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main h2{
+    display: inherit;
+    height: 20px;
+    width: 363px;
+    padding: 5px 0px 5px 7px;
+    text-align: inherit;
+    vertical-align: super;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif;
+    background: linear-gradient(lightgray,
+                darkgray,lightgray);
+}
+
+.main p{
+    font-size: 11px;
+    font-family: Tahoma, Geneva, sans-serif;
+    line-height: 150%;
+    padding: 7px;
+}
+
+a{
+    padding: 5px;
+    color: black;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+/*Me quedé aquí, pegué lo que está abajo
+ de la solución dada en la plataforma.
+ Supogo que sólo hay que acomodar valores
+ y otros detalles.*/
+
+.projects {
+	width:295px;
+    height: 570px;
+    margin-right:15px;
+	display : inline-block;
+	background-color: lightgray;
+	vertical-align: top;
+	background: -webkit-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Safari 5.1- 6.0 */
+  background: -o-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Opera 11.6-12.0 */
+  background: -moz-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Firefox 3.6-15 */
+  background: linear-gradient(to bottom right, #fefefe, #dbcbda); /* Standard syntax */
+}
+
+.projects img, 
+.projects ul {
+	width: 293px;
+	margin:0;
+}
+.projects h2 {
+	width: 273;
+	padding: 5px 10px;
+	color: white;
+	background: -webkit-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Safari 5.1- 6.0 */
+  background: -o-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Opera 11.6-12.0 */
+  background: -moz-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Firefox 3.6-15 */
+  background: linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Standard syntax */
+}
+.projects img{
+	border:none;
+}
+.project p{
+	width: 278;
+}
+.tech_images {
+	padding:15px 0px 0px 12px;
+}
+.tech_images li{
+	display: inline-block;
+	margin-right:10px;
+}
+.tech_images img{
+	width:40px;
+	height:40px;
+}
+.projects button {
+	background-color: green;
+	color:white;
+	border:solid 1px black;
+	border-radius: 3px;
+	padding:5px;
+	margin: 10px 100px;
+	font-weight: 900;
+}
+.footer{
+	width:968px;
+	height:50px;
+}
+.footer p
+{
+	margin:auto;
+	width: 240px;
+}
+.footer ul {
+	width: 380px;
+	margin:auto;
+}
+.footer ul li {
+	display:inline-block;
+}
+.footer img {
+	width: 25px;
+	height:auto;
+	margin:auto;
+}
+.footer, .header{
+	background-color: #f9f9f9
+}

@@ -1,0 +1,54 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dissapearing Ninjas</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-3.2.1.js"></script>
+        <script>
+            "use sctrict";
+            $(document).ready(function(){
+                $('img').click(function(){
+                    $(this).hide();
+                });
+                $('button').click(function(){
+                    $('img').show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <div class="ninjapic">
+                    <img src="ninja.gif" alt="ninja" width="200px">
+                </div>
+                <div class="ninjapic">
+                    <img src="ninja.gif" alt="ninja" width="200px">
+                </div>
+                <div class="ninjapic">
+                    <img src="ninja.gif" alt="ninja" width="200px">
+                </div>
+                <div class="ninjapic">
+                    <img src="ninja.gif" alt="ninja" width="200px">
+                </div>
+            </div>
+            <div>
+                <div class="ninjapic">
+                    <img src="ninja.gif" alt="ninja" width="200px">
+                </div>
+                <div class="ninjapic">
+                    <img src="ninja.gif" alt="ninja" width="200px">
+                </div>
+                <div class="ninjapic">
+                    <img src="ninja.gif" alt="ninja" width="200px">
+                </div>
+                <div class="ninjapic">
+                    <img src="ninja.gif" alt="ninja" width="200px">
+                </div>
+            </div>
+            <button style="vertical-align:middle"><span>Restore </span></button>
+        </div>
+    </body>
+</html>

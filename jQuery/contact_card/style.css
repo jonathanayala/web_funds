@@ -1,0 +1,83 @@
+* {
+	outline: 0;
+	padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 1000px;
+    height: 1000px;
+    padding-top: 20px;
+    margin: 0px auto;
+}
+
+form{
+    width: 450px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contacts{
+    width: 450px;
+    display: inline-block;
+    margin: 0px auto;
+}
+
+button{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+#first_name{
+    width: 130px;
+    height: 25px;
+    margin: 5px 0px;
+}
+
+#last_name{
+    width: 130px;
+    height: 25px;
+    margin: 5px 0px;
+}
+
+#description{
+    width: 212px;
+    height: 100px;
+}
+
+form label:last-of-type{
+    margin-right: 2px;
+}
+
+p{
+    margin: 20px 0px 10px 0px;
+}
+
+.cards{
+    width: 85%;
+    height: 180px;
+    border: solid 2px black;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: top;
+    overflow: auto;
+    padding: 5px;
+    margin: 0px auto;
+    margin-top: 10px;
+    overflow: scroll;
+}

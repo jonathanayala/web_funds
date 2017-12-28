@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+    "use sctrict";
+    $(document).ready(function(){
+        $('.click').click(function(){
+            alert('          Boo!!   `(ಠ_ಠ)´');
+        })
+        $('.hide').click(function(){
+            $('#hideshow').hide();
+        })
+        $('.show').click(function(){
+            $('#hideshow').show();
+        })
+        $('.toggle').click(function(){
+            $('#toggle').toggle();
+        })
+        $('.slideup').click(function(){
+            $('#slide').slideUp();
+        })        
+        $('.slidedown').click(function(){
+            $('#slide').slideDown();
+        })
+        $('.slidetoggle').click(function(){
+            $('#slidetoggle').slideToggle();
+        })
+        $('.fadeout').click(function(){
+            $('#fade').fadeOut();
+        })        
+        $('.fadein').click(function(){
+            $('#fade').fadeIn();
+        })
+        $('.addclass').click(function(){
+            $('#addclass').addClass('red');
+        })
+        $('.before').click(function(){
+            $('#before').before('Hi there! ');
+        })
+        $('.after').click(function(){
+            $('#after').after('Hi there! ');
+        })
+        $('.append').click(function(){
+            $('#append').append(' Hi there! ');
+        })
+        $('.html').click(function(){
+            $('#html').html('<b>Hi there!</b>');
+        })
+        $('.attr').click(function(){
+            $('#attr').attr("width","40px");
+        })
+        $('.val').click(function(){
+            $('#val').val("Mexico!");
+        })
+        $('.textfun').click(function(){
+            $('#textfun').text("Hi there!");
+        })
+        $('.adata').click(function(){
+            $('#data').data("greeting","Hi there!");
+        })
+        $('.gdata').click(function(){
+            alert($('#data').data("greeting"));
+        })
+    })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="functions">
+            <button class="click"> Click </button>
+            <div class="text">
+                <h1>Click</h1>
+                <p>Click the button to pop an alert window</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="hide"> Hide </button>
+            <div class="text">
+                <h1>Hide</h1>
+                <p id="hideshow">Click the button to hide this text</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="show"> Show </button>
+            <div class="text">
+                <h1>Show</h1>
+                <p id="hideshow">Click the button to show this text again</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="toggle"> Toggle </button>
+            <div class="text">
+                <h1>Toggle</h1>
+                <p id="toggle">Click the button to toggle between hide()
+                     and show()</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="slideup"> Slide Up </button>            
+            <button class="slidedown"> Slide Down </button>
+            <div class="text">
+                <h1>Slide</h1>
+                <p id="slide">Click the button to slide this text</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="slidetoggle"> Slide Toggle </button>
+            <div class="text">
+                <h1>Slide</h1>
+                <p id="slidetoggle">Click the button to slidetoggle this text</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="fadeout"> Fade Out </button>
+            <button class="fadein"> Fade In </button>
+            <div class="text">
+                <h1>Fade</h1>
+                <p id="fade">Click the buttons to fade this text</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="addclass"> Add Class </button>
+            <div class="text">
+                <h1>Add class</h1>
+                <p id="addclass">Click the button to add a CSS class that'll 
+                    change this text color</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="before"> Before </button>
+            <div class="text">
+                <h1>Before</h1>
+                <p id="before">Click the button to add text before this text</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="after"> After </button>
+            <div class="text">
+                <h1>After</h1>
+                <p id="after">Click the button to add text after this text</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="append"> Append </button>
+            <div class="text">
+                <h1>Append</h1>
+                <p id="append">Click the button to append text</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="html"> HTML </button>
+            <div class="text">
+                <h1>HTML</h1>
+                <p id="html">Click the button to add html to this text</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="attr"> Attr </button>
+            <div class="text">
+                <h1>Attr</h1>
+                <p>Click the button to set the width of the duck</p>
+            </div>
+            <img src="quack.jpg" alt="quack!" id="attr" width="80">
+        </div>
+        <div class="functions">
+            <button class="val"> Val </button>
+            <div class="text">
+                <h1>Val</h1>
+                <p>Click the button to answer the question below</p>
+                <p>Best national soccer team? --> <input type="text" id="val"></p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="textfun"> Text </button>
+            <div class="text">
+                <h1>Text</h1>
+                <p id="textfun">Click the button to change this text</p>
+            </div>
+        </div>
+        <div class="functions">
+            <button class="adata"> Attach Data </button>
+            <button class="gdata"> Get Data </button>
+            <div class="text">
+                <h1>Data</h1>
+                <p>Click the buttons to attach data and get the data</p>
+                <div id="data"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Hover In/Out</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-3.2.1.js"></script>
+        <script>
+            "use sctrict";
+            $(document).ready(function(){
+			$('img').hover(function(){
+				$(this).attr('temp', $(this).attr('src'));
+				$(this).attr('src', $(this).attr('alt-src'));
+				$(this).attr('alt-src', $(this).attr('temp'));
+			    });
+		    });	
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <img src="starwarslogo.jpg" alt="ninja" alt-src="droids.jpg" temp="" width="300">
+                <img src="starwarslogo.jpg" alt="ninja" alt-src="droids.jpg" temp="" width="300">
+                <img src="starwarslogo.jpg" alt="ninja" alt-src="droids.jpg" temp="" width="300">
+                <img src="starwarslogo.jpg" alt="ninja" alt-src="droids.jpg" temp="" width="300">
+            </div>
+            <div>
+                <img src="battlefront2.jpg" alt="ninja" alt-src="deathstar.png" temp="" width="300">
+                <img src="battlefront2.jpg" alt="ninja" alt-src="deathstar.png" temp="" width="300">
+                <img src="battlefront2.jpg" alt="ninja" alt-src="deathstar.png" temp="" width="300">
+                <img src="battlefront2.jpg" alt="ninja" alt-src="deathstar.png" temp="" width="300">
+            </div>
+        </div>
+    </body>
+</html>

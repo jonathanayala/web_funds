@@ -13,8 +13,8 @@
             function pokemon(){
                 for(var i = 1; i < 151; i++){
                     $('div').append('<img>');
-                    var poke_img = '<img src="http://pokeapi.co/media/img/' + i + '.png">';
-                    $("img").attr("src",poke_img);
+                    var poke_img = 'img/' + i + '.png';
+                    $('img',this).attr("src",poke_img);
                 }
             }
             pokemon();
@@ -22,7 +22,7 @@
     </script>
 </head>
 <body>
-    <div class="images">
+    <div class="container">
     </div>
 </body>
 </html>

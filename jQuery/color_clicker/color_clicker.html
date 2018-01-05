@@ -19,6 +19,7 @@
         }
         $(document).ready(function(){
             $('#large_box').click(function(){
+                $('#large_box').css('background-color',random_color());
                 $('#large_box').children().css('background-color',random_color());
             });
             $('.side_box').click(function(event){

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        "use sctrict";
+        $(document).ready(function(){
+            function pokemon(){
+                for(var i = 1; i < 151; i++){
+                    $('div').append('<img>');
+                    var poke_img = '<img src="http://pokeapi.co/media/img/' + i + '.png">';
+                    $("img").attr("src",poke_img);
+                }
+            }
+            pokemon();
+        });
+    </script>
+</head>
+<body>
+    <div class="images">
+    </div>
+</body>
+</html>

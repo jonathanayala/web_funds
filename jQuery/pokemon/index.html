@@ -10,14 +10,9 @@
     <script>
         "use sctrict";
         $(document).ready(function(){
-            function pokemon(){
-                for(var i = 1; i < 151; i++){
-                    $('div').append('<img>');
-                    var poke_img = 'img/' + i + '.png';
-                    $('img',this).attr("src",poke_img);
-                }
-            }
-            pokemon();
+            for (var i = 1; i < 151; i++){
+                $('div').append(`<img class="${i}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${i}.png">`)
+            };
         });
     </script>
 </head>

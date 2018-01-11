@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Game Of Thrones</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-3.2.1.js"></script>
+        <script>
+            "use strict";
+            $(document).ready(function(){
+                $(document).on('click','img',function(){
+                    var url = "https://www.anapioficeandfire.com/api/houses/";
+                    var currID = $(this).attr('id');
+                    $.get(url + currID, function(res){
+                        console.log(res);
+
+                        var html = " ";
+                        html += "<p>Name: " + res.name + " </p>";
+                        html += "<p>Words: " + res.words + " </p>";
+                        html += "<p>Titles: ";
+                        for(var t = 0; t < res.titles.length; t++){
+                            html += res.titles[t]
+                            if(t < res.titles.length - 1){
+                            html += ", "
+                            }
+                        };
+                        html += "."
+                        console.log(html);
+                        $('#info').html(html);       
+                    }, "json"); 
+                });
+            });    
+        </script>
+        </head>
+        <body>
+            <div class="container">
+                <div id="houses">
+                    <img src="img/stark.jpg" alt="stark" width="300" height="200" id="362">
+                    <img src="img/targaryen.jpg" alt="targaryen" width="300" height="200" id="378">
+                    <img src="img/lannister.jpg" alt="lannister" width="300" height="200" id="230">
+                    <img src="img/baratheon.png" alt="baratheon" width="300" height="200" id="15">
+                </div>
+                <h1>House Details</h1>
+                <div id="info">
+
+                </div>
+            </div>
+        </body>
+    </html>

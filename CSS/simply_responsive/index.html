@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Simply Responsive</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-3.2.1.js"></script>
+        <script>
+            "use strict";
+            $(document).ready(function(){
+                $(window).resize(function(){
+                    if($(window).width() >= 1024){
+                        document.title = "Desktop";
+                    }
+                    else if ($(window).width() > 480 && $(window).width() < 1024){ 
+                        document.title = "Tablet";
+                    }
+                    else if ($(window).width() <= 480){
+                        document.title = "Phone";
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>@media queries</h1>
+            </div>
+            <div class="content">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+            <div class="footer">
+                <p class="sm">Phone: Width  <span>  less than or equal to 480px</span></p>
+                <p class="med">Tablet: Width  <span>  between 481px to 1023px</span></p>
+                <p class="lg">Desktop: Width  <span>  greater than or equal to 1024px</span></p>
+            </div>
+        </div>
+    </body>
+</html>
